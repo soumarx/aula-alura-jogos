@@ -17,4 +17,3 @@ elif jogo == 2:
     adivinhacao.jogar()
 else:
     print("Você não selecionou o jogo")
-
