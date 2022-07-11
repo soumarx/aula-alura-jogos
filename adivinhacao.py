@@ -1,4 +1,5 @@
 import random
+import time
 
 
 def jogar():
@@ -12,6 +13,8 @@ def jogar():
     print("(1) Fácil (2) Médio (3) Difícil")
 
     dificuldade = int(input("Defina a Dificuldade: "))
+
+    time.sleep(2)
 
     if dificuldade == 1:
         tentativas = 20
@@ -38,6 +41,7 @@ def jogar():
         menor = chute < numero_secreto
 
         if acertou:
+            time.sleep(2)
             print("Você acertou e fez {} pontos!".format(pontos))
             break
         else:
@@ -48,6 +52,7 @@ def jogar():
             pontos_perdidos = abs(numero_secreto - chute)
             pontos = pontos - pontos_perdidos
 
+    time.sleep(2)
     print("Fim do jogo! O número secreto era {}".format(numero_secreto))
 
 
